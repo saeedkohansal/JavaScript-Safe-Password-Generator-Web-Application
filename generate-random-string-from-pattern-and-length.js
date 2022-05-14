@@ -1,3 +1,4 @@
+// Generate Random String From Pattern & Length
 const password_maker = (
   length = 6,
   chars = "0123456789"
