@@ -1,0 +1,178 @@
+body {
+    font-family: "Ubuntu";
+    margin: 0;
+    color: #ffffff;
+}
+
+::placeholder {
+    color: #ffffff;
+}
+
+input {
+    font-family: "Ubuntu";
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    vertical-align: -2px;
+}
+
+hr {
+    border-color: #ffffff44;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 256px;
+    border-radius: 0 0 70px 70px;
+}
+
+.app {
+    background-color: #00000044;
+    width: 70%;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.row {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 20px auto;
+}
+
+#result {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto 30px auto;
+    color: #ffffff;
+    background-color: #ffffff44;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    width: 80%;
+}
+
+#password-length {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    background-color: #ffffff44;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+}
+
+.generate-btn-row {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+#generate-btn {
+    user-select: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 40px 0 -30px 0;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #00000044;
+    border-radius: 60px 60px 0 0;
+    transition: 0.5s;
+}
+
+#generate-btn:hover,
+#generate-btn:focus,
+#generate-btn:active {
+    background-color: #ffffff44;
+}
+
+label {
+    display: inline-block;
+    margin: 10px auto 0 auto;
+}
+
+[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+[type="checkbox"]+span {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 0 10px 0 0;
+    transition: 0.5s;
+}
+
+[type="checkbox"]:checked+span {
+    color: #1fcb26;
+    border: 2px solid #1fcb26;
+    border-radius: 50px;
+}
+
+.bg-color-animation {
+    -webkit-animation: bg-color-animation 6s linear infinite alternate both;
+    animation: bg-color-animation 6s linear infinite alternate both;
+}
+
+@-webkit-keyframes bg-color-animation {
+    0% {
+        background: #4caf50;
+    }
+
+    33.3333% {
+        background: #135515;
+    }
+
+    66.666% {
+        background: #0a8f0f;
+    }
+
+    100% {
+        background: #2a5831;
+    }
+}
+
+@keyframes bg-color-animation {
+    0% {
+        background: #4caf50;
+    }
+
+    33.3333% {
+        background: #135515;
+    }
+
+    66.666% {
+        background: #0a8f0f;
+    }
+
+    100% {
+        background: #2a5831;
+    }
+}
